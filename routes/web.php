@@ -82,3 +82,8 @@ Route::controller(PedidoController::class)->prefix('pedidos')->name('pedidos.')-
     Route::put('/{id}', 'update')->name('update');
     Route::delete('/{id}', 'delete')->name('delete');
 });
+
+// ruta para componentes de clase
+Route::get('componente-clase', function () {
+    return view('componente-clase.index');
+});
